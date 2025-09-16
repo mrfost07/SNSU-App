@@ -1,0 +1,66 @@
+<ion-header>
+<ion-toolbar color="success">
+<ion-title style="color: white;">Home | SNSU</ion-title>
+<ion-buttons slot="start">
+<ion-menu-button class="white-menu-button"></ion-menu-button>
+</ion-buttons>
+<!-- Back Icon -->
+<ion-buttons slot="end">
+<ion-back-button defaultHref="home" class="white-back-button"></ion-back-button>
+</ion-buttons>
+</ion-toolbar>
+<!-- Header Image -->
+<ion-img src="/assets/image/header.jpeg" alt="SNSU Header"></ion-img>
+</ion-header>
+<ion-content>
+<ion-list>
+<ion-item routerLink="/academics/ceitcollege">
+<ion-icon slot="start" [icon]="icons.ceit" color="white"></ion-icon>
+<ion-label>College of Engineering and I.T</ion-label>
+</ion-item>
+<ion-item routerLink="/academics/teachereduc">
+<ion-icon slot="start" [icon]="icons.teacherEducation" color="white"></ion-icon>
+<ion-label>College of Teacher Education</ion-label>
+</ion-item>
+<ion-item routerLink="/academics/cotcollege">
+<ion-icon slot="start" [icon]="icons.technology" color="white"></ion-icon>
+<ion-label>College of Technology</ion-label>
+</ion-item>
+<ion-item routerLink="/academics/arts-sciences">
+<ion-icon slot="start" [icon]="icons.artsSciences" color="white"></ion-icon>
+<ion-label>College of Arts and Sciences</ion-label>
+</ion-item>
+<ion-item routerLink="/academics/graduate-studies">
+<ion-icon slot="start" [icon]="icons.graduateStudies" color="white"></ion-icon>
+<ion-label>Graduate Studies</ion-label>
+</ion-item>
+<ion-item routerLink="/academics/registrar">
+<ion-icon slot="start" [icon]="icons.registrar" color="white"></ion-icon>
+<ion-label>The Registrar</ion-label>
+</ion-item>
+<ion-item routerLink="/academics/courses-offered">
+<ion-icon slot="start" [icon]="icons.coursesOffered" color="white"></ion-icon>
+<ion-label>Courses Offered</ion-label>
+</ion-item>
+<ion-item routerLink="/academics/calendar">
+<ion-icon slot="start" [icon]="icons.calendar" color="white"></ion-icon>
+<ion-label>Calendar of Activities</ion-label>
+</ion-item>
+</ion-list>
+<ion-card>
+<img alt="snsu" src="/assets/image/ssct.jpeg" />
+<ion-card-header>
+<ion-card-title>ABOUT SNSU</ion-card-title>
+</ion-card-header>
+<ion-card-content>
+The Surigao del Norte State University is a public university in the Philippines.
+It is mandated to provide advanced education, higher technological, professional instruction, and
+training in
+the fields of agriculture and environmental studies, fishery, engineering, forestry, industrial
+technology,
+education, law, medicine and other health-related programs, information technology, arts and
+sciences, and
+other related courses.
+</ion-card-content>
+</ion-card>
+</ion-content>

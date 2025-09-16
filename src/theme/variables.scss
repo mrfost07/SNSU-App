@@ -1,2 +1,27 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+/* global.scss */
+:root {
+  /* Background */
+  --ion-background-color: #000000;
+  --ion-background-color-rgb: 0,0,0;
+
+  /* Text */
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255,255,255;
+
+  /* Toolbar, header, and card backgrounds */
+  --ion-toolbar-background: #1c1c1c;
+  --ion-card-background: #1e1e1e;
+
+  /* Input placeholder text */
+  --ion-placeholder-color: #aaaaaa;
+}
+ion-content,
+ion-title,
+ion-label,
+ion-text,
+h1, h2, h3, h4, h5, h6,
+p, span, div {
+  color: #ffffff !important;
+}

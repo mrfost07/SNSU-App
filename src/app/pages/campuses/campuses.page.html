@@ -1,0 +1,30 @@
+<ion-header>
+<ion-toolbar color="success">
+<ion-title style="color: white;">Home | SNSU</ion-title>
+<ion-buttons slot="start">
+<ion-menu-button class="white-menu-button"></ion-menu-button>
+</ion-buttons>
+<!-- Back Icon -->
+<ion-buttons slot="end">
+<ion-back-button defaultHref="home" class="white-back-button"></ion-back-button>
+</ion-buttons>
+</ion-toolbar>
+<!-- Header Image -->
+<ion-img src="/assets/image/header.jpeg" alt="SNSU Header"></ion-img>
+</ion-header>
+<ion-content>
+<ion-list>
+<ion-item [routerLink]="['/campuses/delcarmen']"> <!-- ✅ Correct way -->
+<ion-icon slot="start" [icon]="icons.delCarmen" color="white"></ion-icon>
+<ion-label>Del Carmen Campus</ion-label>
+</ion-item>
+<ion-item [routerLink]="['/campuses/mainit']">
+<ion-icon slot="start" [icon]="icons.mainit" color="white"></ion-icon>
+<ion-label>Mainit Campus</ion-label>
+</ion-item>
+<ion-item [routerLink]="['/campuses/malimono']">
+<ion-icon slot="start" [icon]="icons.malimono" color="white"></ion-icon>
+<ion-label>Malimono Campus</ion-label>
+</ion-item>
+</ion-list>
+</ion-content>

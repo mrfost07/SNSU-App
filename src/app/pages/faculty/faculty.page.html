@@ -1,0 +1,38 @@
+<ion-header>
+<ion-toolbar color="success">
+<ion-title style="color: white;">Home | SNSU</ion-title>
+<ion-buttons slot="start">
+<ion-menu-button class="white-menu-button"></ion-menu-button>
+</ion-buttons>
+<!-- Back Icon -->
+<ion-buttons slot="end">
+<ion-back-button defaultHref="home" class="white-back-button"></ion-back-button>
+</ion-buttons>
+</ion-toolbar>
+<!-- Header Image -->
+<ion-img src="/assets/image/header.jpeg" alt="SNSU Header"></ion-img>
+</ion-header>
+<ion-content>
+<ion-list>
+<ion-item routerLink="/faculty/ceit">
+<ion-icon slot="start" [icon]="icons.ceit" color="white"></ion-icon>
+<ion-label>College of Engineering and I.T</ion-label>
+</ion-item>
+<ion-item routerLink="/faculty/teacher-education">
+<ion-icon slot="start" [icon]="icons.teacherEducation" color="white"></ion-icon>
+<ion-label>College of Teacher Education</ion-label>
+</ion-item>
+<ion-item routerLink="/faculty/technology">
+<ion-icon slot="start" [icon]="icons.technology" color="white"></ion-icon>
+<ion-label>College of Technology</ion-label>
+</ion-item>
+<ion-item routerLink="/faculty/arts-sciences">
+<ion-icon slot="start" [icon]="icons.artsSciences" color="white"></ion-icon>
+<ion-label>College of Arts and Sciences</ion-label>
+</ion-item>
+<ion-item routerLink="/faculty/graduate-studies">
+<ion-icon slot="start" [icon]="icons.graduateStudies" color="white"></ion-icon>
+<ion-label>Graduate Studies</ion-label>
+</ion-item>
+</ion-list>
+</ion-content>

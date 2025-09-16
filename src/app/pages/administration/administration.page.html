@@ -1,0 +1,57 @@
+<ion-header>
+<ion-toolbar color="success">
+<ion-title>Administration | SNSU</ion-title>
+<!-- Menu Icon -->
+<ion-buttons slot="start">
+<ion-menu-button></ion-menu-button>
+</ion-buttons>
+<!-- Back Icon -->
+<ion-buttons slot="end">
+<ion-back-button defaultHref="home"></ion-back-button>
+</ion-buttons>
+</ion-toolbar>
+<!-- Header Image -->
+<ion-img src="/assets/image/header.jpeg"></ion-img>
+</ion-header>
+<ion-content>
+<!-- List of Administration Sections -->
+<ion-list>
+<ion-item routerLink="/administration/bor">
+<ion-icon slot="start" [icon]="icons.peopleOutline"></ion-icon>
+<ion-label>Board of Regents</ion-label>
+</ion-item>
+<ion-item routerLink="/administration/resolutions">
+<ion-icon slot="start" [icon]="icons.documentOutline"></ion-icon>
+<ion-label>BOR Resolutions</ion-label>
+</ion-item>
+<ion-item routerLink="/administration/president">
+<ion-icon slot="start" [icon]="icons.personOutline"></ion-icon>
+<ion-label>The President</ion-label>
+</ion-item>
+<ion-item routerLink="/administration/bom">
+<ion-icon slot="start" [icon]="icons.peopleOutline"></ion-icon>
+<ion-label>Board of Managements</ion-label>
+</ion-item>
+<ion-item routerLink="/administration/acad">
+<ion-icon slot="start" [icon]="icons.peopleCircleOutline"></ion-icon>
+<ion-label>Academic Council</ion-label>
+</ion-item>
+<ion-item routerLink="/administration/admin">
+<ion-icon slot="start" [icon]="icons.manOutline"></ion-icon>
+<ion-label>Administrative Council</ion-label>
+</ion-item>
+</ion-list>
+<!-- About SNSU Card -->
+<ion-card>
+<img alt="snsu" src="/assets/image/ssct.jpeg" />
+<ion-card-header>
+<ion-card-title>ABOUT SNSU</ion-card-title>
+</ion-card-header>
+<ion-card-content>
+The Surigao del Norte State University is a public university in the Philippines. It is mandated to
+provide advanced education, higher technological, professional instruction, and training in the fields of
+agriculture, environmental studies, fishery, engineering, forestry, industrial technology, education, law,
+medicine, health-related programs, information technology, arts and sciences, and other related courses.
+</ion-card-content>
+</ion-card>
+</ion-content>
