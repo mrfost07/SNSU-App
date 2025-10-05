@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center" style="color: white;">
+      Create an Account
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="signup-background">
+  <div class="centered-container">
+
+    <!-- SNSU Logo -->
+    <div class="logo-container ion-text-center">
+      <img src="/assets/icon/icon.png" alt="SNSU Logo" class="snsu-logo" />
+    </div>
+
+    <!-- Signup Card -->
+    <div class="signup-card">
+      <h2 class="ion-text-center">Sign Up</h2>
+
+      <form (ngSubmit)="register()">
+        <!-- Full Name -->
+        <ion-item lines="none">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-input placeholder="Enter your full name" [(ngModel)]="full_name" name="full_name"></ion-input>
+        </ion-item>
+
+        <!-- Email -->
+        <ion-item lines="none">
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+          <ion-input type="email" placeholder="Enter your email" [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+
+        <!-- Password -->
+        <ion-item lines="none">
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-input type="password" placeholder="Enter your password" [(ngModel)]="password" name="password"></ion-input>
+        </ion-item>
+
+        <!-- Register Button -->
+        <ion-button expand="block" color="success" type="submit">REGISTER</ion-button>
+
+        <!-- Log In Link -->
+        <ion-text color="medium">
+          <p class="ion-text-center ion-margin-top">
+            Already have an account?
+            <a routerLink="/login"><strong>Log In</strong></a>
+          </p>
+        </ion-text>
+      </form>
+    </div>
+  </div>
+</ion-content>

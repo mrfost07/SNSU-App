@@ -7,3 +7,32 @@ color: white;
 ion-card-title {
   --color: #ffffff; /* makes the text white */
 }
+
+/* Make Swiper navigation arrows white */
+::ng-deep swiper-container {
+  --swiper-navigation-color: white;
+  --swiper-pagination-color: white;
+}
+
+/* Optional: slightly enlarge the arrows for better visibility */
+::ng-deep .swiper-button-prev,
+::ng-deep .swiper-button-next {
+  color: white !important;
+  scale: 1.2;
+}
+
+/* Optional: Add subtle shadow behind white arrows for visibility */
+::ng-deep .swiper-button-prev::after,
+::ng-deep .swiper-button-next::after {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Pagination dots below the slider */
+::ng-deep .swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.7;
+}
+
+::ng-deep .swiper-pagination-bullet-active {
+  opacity: 1;
+}

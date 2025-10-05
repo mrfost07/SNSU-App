@@ -1,12 +1,19 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button autoHide="false"></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Administration</ion-title>
-  </ion-toolbar>
+<ion-toolbar color="success">
+<ion-title style="color: white;">Administration | SNSU</ion-title>
+<ion-buttons slot="start">
+<ion-menu-button class="white-menu-button"></ion-menu-button>
+</ion-buttons>
+<!-- Back Icon -->
+<ion-buttons slot="end">
+<ion-back-button defaultHref="home" class="white-back-button"></ion-back-button>
+</ion-buttons>
+</ion-toolbar>
+<!-- Header Image -->
+<ion-img src="/assets/image/header.jpeg" alt="SNSU Header"></ion-img>
 </ion-header>
-
+<ion-content>
+  
 <ion-menu side="start" menuId="administration-menu" contentId="main-content">
   <ion-header>
     <ion-toolbar color="primary">
@@ -50,7 +57,7 @@
 </ion-list>
 <!-- About SNSU Card -->
 <ion-card>
-<img alt="snsu" src="/assets/image/ssct.jpeg" />
+<img alt="snsu" src="/assets/image/admin.jpg" />
 <ion-card-header>
 <ion-card-title>ABOUT SNSU</ion-card-title>
 </ion-card-header>

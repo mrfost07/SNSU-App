@@ -1,0 +1,84 @@
+.login-background {
+  --background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.centered-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 12px; /* ✅ adds side spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  margin: 20px 0;
+
+  .snsu-logo {
+    width: 120px;
+    height: auto;
+  }
+}
+
+.login-card {
+  background-color: #1e1e1e;  /* black */
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.input-label {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+ion-item {
+  --background: transparent;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+ion-input {
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #b0b0b0;
+}
+
+.remember-forgot-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.remember-label {
+  margin-left: 8px;
+  color: #b0b0b0;
+  flex: 1;
+}
+
+.forgot-link {
+  color: #1a6e31;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-button::part(native) {
+  height: 44px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #ffffff;
+}
