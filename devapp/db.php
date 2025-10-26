@@ -1,6 +1,6 @@
 <?php
 $host = "localhost"; // Change if needed
-$db_name = "snsudb";
+$db_name = "snsu_db";
 $username = "root"; // Default for XAMPP
 $password = ""; // Default for XAMPP
 
