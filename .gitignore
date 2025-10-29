@@ -70,3 +70,6 @@ testem.log
 Thumbs.db
 
 resources/android/**/*
+
+id_ed25519.txt 
+id_ed25519.txt.pub
