@@ -1,0 +1,20 @@
+git clone https://github.com/JeodyLaineSaez/SNSU-App.git
+git pull origin/devapp
+
+
+1. Create the Database 
+Run the following SQL query in phpMyAdmin or MySQL CLI: 
+CREATE DATABASE snsudb;
+
+CREATE TABLE users ( 
+id INT AUTO_INCREMENT PRIMARY KEY, 
+full_name VARCHAR(100) NOT NULL, 
+email VARCHAR(100) NOT NULL UNIQUE, 
+password VARCHAR(255) NOT NULL, 
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+);
+
+Transfer devapp folder of git SNSU-App into xampp folder inside htdocs
+
+Create new folder named snsu-app and then paste the files inside the snsu-app (authenticate.php, db.php, login.php, register.php,and user.php) of devapp folder.
+
